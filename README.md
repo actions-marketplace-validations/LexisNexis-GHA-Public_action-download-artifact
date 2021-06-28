@@ -12,7 +12,7 @@ Let's suppose you have a workflow with a job in it that at the end uploads an ar
 
 ```yaml
 - name: Download artifact
-  uses: dawidd6/action-download-artifact@v2
+  uses: LexisNexis-GHA-Public/action-download-artifact@v2.14.0.0
   with:
     # Optional, GitHub token, a Personal Access Token with `public_repo` scope if needed
     github_token: ${{secrets.GITHUB_TOKEN}}, required if artifact is from a different repo
@@ -47,3 +47,6 @@ Let's suppose you have a workflow with a job in it that at the end uploads an ar
     # Optional, defaults to current repo
     repo: ${{github.repository}}
 ```
+
+# Credits
+Credits for this action go to dawidd6 (dawidd6/action-download-artifact).  This repo has been integrated into the LexisNexis ecosystem for internal uses.
